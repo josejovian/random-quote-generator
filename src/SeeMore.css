@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+.hidden {
+  display: none !important;
+}
+
+@keyframes slide {
+  from {
+    position: relative;
+    opacity: 0;
+    left: -1000px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes hide {
+  0% {
+    position: relative;
+    opacity: 1;
+    left: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    opacity: 0;
+    left: -1000px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.reveal {
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.hide {
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.fade-out {
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+#see-more {
+  display: grid;
+  grid-template-areas: "name arrow" "tags arrow";
+  grid-gap: 1px;
+  padding: 32px;
+  width: 30vw;
+  color: #E1D9D1;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  margin-bottom: 96px;
+  position: relative;
+}
+
+#see-more:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #E1D9D1;
+}
+
+div span {
+  padding: 4px 0px;
+}
+
+#name {
+  font-family: "Raleway";
+  font-weight: bold;
+  grid-area: name;
+}
+
+#tags {
+  grid-area: tags;
+}
+
+#arrow {
+  grid-area: arrow;
+  margin: auto 0;
+  text-align: right;
+}
+
+/*# sourceMappingURL=SeeMore.css.map */

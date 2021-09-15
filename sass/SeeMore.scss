@@ -1,0 +1,41 @@
+@import 'Main.scss';
+
+#see-more {
+	display: grid;
+	grid-template-areas:
+		'name arrow'
+		'tags arrow';
+	grid-gap: 1px;
+	padding: 32px;
+	width: 30vw;
+	color: $text;
+	transition: background-color 0.2s;
+	cursor: pointer;
+	margin-bottom: 96px;
+	position: relative;
+}
+
+#see-more:hover {
+	color: rgba(0, 0, 0, 0.8);
+	background-color: $text;
+}
+
+div span {
+	padding: 4px 0px;
+}
+
+#name {
+	font-family: 'Raleway';
+	font-weight: bold;	
+	grid-area: name;
+}
+
+#tags {
+	grid-area: tags;
+}
+
+#arrow {
+	grid-area: arrow;
+	margin: auto 0;
+	text-align: right;
+}

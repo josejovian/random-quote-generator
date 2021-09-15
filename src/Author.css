@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+.hidden {
+  display: none !important;
+}
+
+@keyframes slide {
+  from {
+    position: relative;
+    opacity: 0;
+    left: -1000px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes hide {
+  0% {
+    position: relative;
+    opacity: 1;
+    left: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    opacity: 0;
+    left: -1000px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.reveal {
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.hide {
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.fade-out {
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+#title {
+  font-weight: 700;
+  font-size: 2rem;
+  height: 64px;
+  padding: 2vh 0px 0px 48px;
+  color: #E1D9D1;
+}
+
+/*# sourceMappingURL=Author.css.map */

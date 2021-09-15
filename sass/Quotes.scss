@@ -1,0 +1,39 @@
+@import 'Main.scss';
+
+ul, li {
+	list-style-type: none;
+	color: $text!important;
+}
+
+.quote, %quote {
+	width: 30vw;
+	color: $text;
+	padding: 48px;
+	border-left: 6px solid $secondary;
+	font-size: 1.6rem;
+}
+
+.quote-reveal {
+	@extend .quote;
+	@extend .reveal;
+}
+
+.quote-hide {
+	@extend .quote;
+	@extend .hide;
+}
+
+.quote:not(:first-of-type) {
+	margin-top: 96px;
+}
+
+.quote:last-child:not(:first-child) {
+	margin-bottom: 96px;
+}
+.tail {
+	margin-bottom: 96px;
+}
+
+#quote-container {
+	margin: 32px 0px;
+}

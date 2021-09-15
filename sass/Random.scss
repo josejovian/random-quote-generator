@@ -1,0 +1,23 @@
+@import 'Main.scss';
+
+#random {
+	border: none;
+	background-color: $primary;
+	color: $text;
+	font-family: inherit;
+	position: absolute;
+	top: 16px;
+	right: 64px;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+	transition: opacity 0.2s;
+}
+
+#random:hover {
+	opacity: 0.8;
+}
+
+#random span {
+	align-self: center;
+}

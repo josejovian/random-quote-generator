@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+.hidden {
+  display: none !important;
+}
+
+@keyframes slide {
+  from {
+    position: relative;
+    opacity: 0;
+    left: -1000px;
+  }
+  to {
+    position: relative;
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes hide {
+  0% {
+    position: relative;
+    opacity: 1;
+    left: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    opacity: 0;
+    left: -1000px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.reveal, .quote-reveal {
+  animation-name: slide;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.hide, .quote-hide {
+  animation-name: hide;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.fade-out {
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+ul, li {
+  list-style-type: none;
+  color: #E1D9D1 !important;
+}
+
+.quote, .quote-hide, .quote-reveal {
+  width: 30vw;
+  color: #E1D9D1;
+  padding: 48px;
+  border-left: 6px solid #1dd1a1;
+  font-size: 1.6rem;
+}
+
+.quote:not(:first-of-type), .quote-reveal:not(:first-of-type), .quote-hide:not(:first-of-type) {
+  margin-top: 96px;
+}
+
+.quote:last-child:not(:first-child), .quote-reveal:last-child:not(:first-child), .quote-hide:last-child:not(:first-child) {
+  margin-bottom: 96px;
+}
+
+.tail {
+  margin-bottom: 96px;
+}
+
+#quote-container {
+  margin: 32px 0px;
+}
+
+/*# sourceMappingURL=Quotes.css.map */
