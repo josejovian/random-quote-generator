@@ -6,13 +6,15 @@
 		'name arrow'
 		'tags arrow';
 	grid-gap: 1px;
+
+	position: relative;
 	padding: 32px;
+	margin-bottom: 96px;
+
 	width: 30vw;
 	color: $text;
 	transition: background-color 0.2s;
 	cursor: pointer;
-	margin-bottom: 96px;
-	position: relative;
 }
 
 #see-more:hover {
@@ -25,9 +27,9 @@ div span {
 }
 
 #name {
+	grid-area: name;
 	font-family: 'Raleway';
 	font-weight: bold;	
-	grid-area: name;
 }
 
 #tags {

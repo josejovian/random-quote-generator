@@ -1,16 +1,19 @@
 @import 'Main.scss';
 
 #random {
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+
+	position: absolute;
+	top: 16px;
+	right: 64px;
+
 	border: none;
 	background-color: $primary;
 	color: $text;
 	font-family: inherit;
-	position: absolute;
-	top: 16px;
-	right: 64px;
-	display: flex;
-	justify-content: space-between;
-	align-content: space-between;
+
 	transition: opacity 0.2s;
 }
 
@@ -20,4 +23,10 @@
 
 #random span {
 	align-self: center;
+}
+
+@media screen and (max-width: 800px) {
+	#random {
+		right: 16px;
+	}	
 }

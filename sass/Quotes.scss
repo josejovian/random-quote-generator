@@ -5,12 +5,14 @@ ul, li {
 	color: $text!important;
 }
 
-.quote, %quote {
+.quote {
 	width: 30vw;
-	color: $text;
+
 	padding: 48px;
-	border-left: 6px solid $secondary;
+
+	color: $text;
 	font-size: 1.6rem;
+	border-left: 6px solid $secondary;
 }
 
 .quote-reveal {
@@ -36,4 +38,10 @@ ul, li {
 
 #quote-container {
 	margin: 32px 0px;
+}
+
+@media screen and (max-width: 800px) {
+	.quote {
+		font-size: 1em;
+	}	
 }

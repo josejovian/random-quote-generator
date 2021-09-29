@@ -1,9 +1,16 @@
 @import 'Main.scss';
 
 #title {
-	font-weight: 700;
-	font-size: 2rem;
 	height: 64px;
 	padding: 2vh 0px 0px 48px;
+
+	font-weight: 700;
+	font-size: 2rem;
 	color: $text;
+}
+
+@media screen and (max-width: 800px) {
+	#title {
+		padding: 2vh 0px 0px 0px;
+	}	
 }
